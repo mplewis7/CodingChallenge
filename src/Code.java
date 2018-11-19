@@ -9,7 +9,7 @@ public class Code {
   public static void main(String[] args) {
     Scanner input;
     try {
-      input = new Scanner(new File("./src/input.txt"));
+      input = new Scanner(new File("input.txt"));
     } catch (FileNotFoundException e) {
       System.err.println("The file 'input.txt' does not exist.");
       return;
@@ -34,7 +34,7 @@ public class Code {
 
     BufferedWriter output;
     try {
-      output = new BufferedWriter(new FileWriter("./src/output.txt"));
+      output = new BufferedWriter(new FileWriter("output.txt"));
     } catch (IOException e) {
       System.err.println("Could not create file 'output'.");
       return;
