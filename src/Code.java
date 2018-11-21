@@ -20,7 +20,7 @@ public class Code {
     Map<String, Integer> counts = new HashMap<>();
     // queue organizes the words based on the number of times they're been seen
     PriorityQueue<String> queue = new PriorityQueue<>((x, y) ->
-        counts.get(x) > counts.get(y) ? -1 : counts.get(x) < counts.get(y) ? 1 : 0);
+        counts.get(x) > counts.get(y) ? -1 : counts.get(x) < counts.get(y) ? 1 : x.compareTo(y));
 
     while(input.hasNextLine()) {
       // read in next line of input and format it appropriately
